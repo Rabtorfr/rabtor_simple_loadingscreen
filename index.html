@@ -1,3 +1,6 @@
+ <!-- Loading screen By https://www.youtube.com/channel/UCcvQNELYLPdoaWSvF9k7Kkg -->
+ <!-- Current version of the loading screen : 1.1.0 -->
+ <!-- Projet 100% free, any problem contact rabtorlobby@gmail.com or release fivem or youtube -->
 <html>
     <head>
      <!-- Title not show in your server -->
@@ -7,13 +10,13 @@
       <!-- Add script for the text -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
     </head>
-<style>#selector {
-    width:100%;
-    height:100%;
-}</style>
+<style>#selector {width:100%; height:100%;}</style>
+ <!-- If you want change the background please, change the background.gif to your link -->
+ <!-- Note speedplay.fr is my domaine expire in 2018 so if the gif dosen't work in 2018 that is normal -->
 <img src='http://speedplay.fr/background.gif' id='selector'/>
     <body>
       <audio autoplay="" id="Loading" loop=""><source src="music/Loading.ogg" type="audio/ogg" />
+       <!-- If you want change the sound please, convert your sound in .ogg and put this in music folder  and change Loading.ogg to your sound .ogg-->
          <source src="music/Loading.ogg" type="audio/ogg">
     </audio>
     <script>
@@ -22,7 +25,7 @@
     </script>
            
        
-
+          <!-- Text & Rules you cant change that like you want !--> 			
             <div class="fix">
                <center> <h3>We load your characters please wait ...</h3></center>
     
@@ -38,7 +41,7 @@
 					</center>
         </div>
  
-
+ <!-- Script of fivem keks loading screen. !--> 			
 <script type="text/javascript">
 var count = 0;
 var thisCount = 0;
@@ -82,6 +85,8 @@ window.addEventListener('message', function(e)
     (handlers[e.data.eventName] || function() {})(e.data);
 });
 </script>
+
+ <!-- Script for the text changer !--> 
 <script>
 (function() {
 	//used for text
@@ -114,13 +119,7 @@ window.addEventListener('message', function(e)
 
     showNextQuote();
 
-})();
-$('#background').cycle({ 
-			fx: 'fade', // You can change the FX way the pictures changes with, an example scrollDown. Check out http://jquery.malsup.com/cycle/ for more about that matter
-			speed: 2000, 
-			timeout: 4000 
-		});
-
+})
 </script>
     </body>
 </html>

@@ -3,7 +3,8 @@
 .text {
     display:none;
     color:#FFF;
-    font-family: BankGothic;
+    font-family: Lucida Sans Unicode;
+    background-color: rgba(52, 152, 219,0.3);
 }
     
 

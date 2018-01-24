@@ -25,7 +25,7 @@
     </script>
            
        
-          <!-- Text & Rules you can change that like you want !--> 			
+          <!-- Text & Rules you cant change that like you want !--> 			
             <div class="fix">
                <center> <h3>We load your characters please wait ...</h3></center>
     
@@ -50,33 +50,33 @@ const handlers = {
     {
         count = data.count;
 
-        document.querySelector('.loadbar h3').innerHTML += emoji[data.type][data.order - 1] || '';
+        document.querySelector('.letni h3').innerHTML += emoji[data.type][data.order - 1] || '';
     },
 
     initFunctionInvoking(data)
     {
-        document.querySelector('.scroll').style.left = '0%';
-        document.querySelector('.scroll').style.width = ((data.idx / count) * 100) + '%';
+        document.querySelector('.thingy').style.left = '0%';
+        document.querySelector('.thingy').style.width = ((data.idx / count) * 100) + '%';
     },
 
     startDataFileEntries(data)
     {
         count = data.count;
 
-        document.querySelector('.loadbar h3').innerHTML += "\u{1f358}";
+        document.querySelector('.letni h3').innerHTML += "\u{1f358}";
     },
 
     performMapLoadFunction(data)
     {
         ++thisCount;
 
-        document.querySelector('.scroll').style.left = '0%';
-        document.querySelector('.scroll').style.width = ((thisCount / count) * 100) + '%';
+        document.querySelector('.thingy').style.left = '0%';
+        document.querySelector('.thingy').style.width = ((thisCount / count) * 100) + '%';
     },
 
     onLogLine(data)
     {
-        document.querySelector('.loadbar p').innerHTML = data.message + "..!";
+        document.querySelector('.letni p').innerHTML = data.message + "..!";
     }
 };
 
